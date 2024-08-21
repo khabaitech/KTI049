@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 09</title>
+    <style>
+.pushable{ position: fixed;
+    top: 50%;
+    left: 50%;
+    background: hsl(340deg, 100% , 32%);
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;   
+}
+.r{display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    background: hsl(345deg,  100%, 47% );
+    color: white;
+    transform: translatey(-6px);
+}
+.pushable:active .r {transform: translate(-2px);
+}
+
+.box{
+background-color: red;
+border-radius:20px;
+width:30px;
+height: 30px;
+z-index:-2;
+position:absolute;
+top: 360px;
+left: 830px;
+}
+#one{
+animation: jump1 2s;
+}
+@keyframes jump1{
+    50%{top:5px;
+        left:550px;
+background-color: whitesmoke;
+border: 2px solid yellow;}
+    }
+    
+#two{
+animation: jump2 2s;
+}
+@keyframes jump2{
+    50%{top:60px;
+        left:500px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 4, 255);}
+    }
+
+    #three{
+animation: jump3 2s;
+}
+@keyframes jump3{
+    50%{top:120px;
+        left:450px;
+background-color: whitesmoke;
+border: 2px solid rgb(12, 12, 10);}
+    }
+
+    #four{
+animation: jump4 2s;
+}
+@keyframes jump4{
+    50%{top: 180px;
+        left:400px;
+background-color: whitesmoke;
+border: 2px solid rgb(229, 229, 108);}
+    }
+
+    #five{
+animation: jump5 2s;
+}
+@keyframes jump5{
+    50%{top:240px;
+        left:350px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 247, 255);}
+    }
+
+    #six{
+animation: jump6 2s;
+}
+@keyframes jump6{
+    50%{top:300px;
+        left:400px;
+background-color: whitesmoke;
+border: 2px solid rgb(255, 51, 0);}
+    }
+
+    #seven{
+animation: jump7 2s;
+}
+@keyframes jump7{
+    50%{top: 360px;
+        left:450px;
+background-color: whitesmoke;
+border: 2px solid rgba(255, 255, 0, 0.136);}
+    }
+
+    #eight{
+animation: jump8 2s;
+}
+@keyframes jump8{
+    50%{top:420px;
+        left:500px;
+background-color: whitesmoke;
+border: 2px solid yellow;}
+    }
+    
+#nine{
+animation: jump9 2s;
+}
+@keyframes jump9{
+    50%{top:480px;
+        left:550px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 4, 255);}
+    }
+
+    #ten{
+animation: jump10 2s;
+}
+@keyframes jump10{
+    50%{top: 540px;
+        left:600px;
+background-color: whitesmoke;
+border: 2px solid rgb(12, 12, 10);}
+    }
+
+    #eleven{
+animation: jump11 2s;
+}
+@keyframes jump11{
+    50%{top:0px;
+        left:980px;
+background-color: whitesmoke;
+border: 2px solid rgb(229, 229, 108);}
+    }
+
+    #tweleve{
+animation: jump12 2s;
+}
+@keyframes jump12{
+    50%{top:60px;
+        left:1030px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 247, 255);}
+    }
+
+    #thirteen{
+animation:jump13 2s;
+}
+@keyframes jump13{
+    50%{top:120px;
+        left:1080px;
+background-color: whitesmoke;
+border: 2px solid yellow;}
+    }
+    
+#fourteen{
+animation: jump14 2s;
+}
+@keyframes jump14{
+    50%{top:180px;
+        left:1130px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 4, 255);}
+    }
+
+    #fifteen{
+animation: jump15 2s;
+}
+@keyframes jump15{
+    50%{top: 240px;
+        left:1180px;
+background-color: whitesmoke;
+border: 2px solid rgb(12, 12, 10);}
+    }
+
+    #sixteen{
+animation: jump16 2s;
+}
+@keyframes jump16{
+    50%{top: 300px;
+        left:1130px;
+background-color: whitesmoke;
+border: 2px solid rgb(229, 229, 108);}
+    }
+
+ 
+    #seventeen{
+animation: jump17 2s;
+}
+@keyframes jump17{
+    50%{top:360px;
+        left:1080px;
+background-color: whitesmoke;
+border: 2px solid yellow;}
+    }
+    
+#eighteen{
+animation: jump18 2s;
+}
+@keyframes jump18{
+    50%{top:420px;
+        left:1030px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 4, 255);}
+    }
+
+    #nineteen{
+animation: jump19 2s;
+}
+@keyframes jump19{
+    50%{top: 480px;
+        left:980px;
+background-color: whitesmoke;
+border: 2px solid rgb(12, 12, 10);}
+    }
+ 
+
+    #twenty{
+animation: jump20 2s;
+}
+@keyframes jump20{
+    50%{top:540px;
+        left:930px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 247, 255);}
+    }
+
+    #twentyone{
+animation: jump21 2s;
+}
+@keyframes jump21{
+    50%{top:580px;
+        left:830px;
+background-color: whitesmoke;
+border: 2px solid rgba(12, 12, 10);}
+    }
+    
+#twentytwo{
+animation: jump22 2s;
+}
+@keyframes jump22{
+    50%{top:0px;
+        left:770px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 4, 255);}
+    }
+
+    #twentythree{
+animation: jump23 2s;
+}
+@keyframes jump23{
+    50%{top:0px;
+        left:900px;
+background-color: whitesmoke;
+border: 2px solid rgb(12, 12, 10);}
+    }
+
+    #twentyfour{
+animation: jump24 2s;
+}
+@keyframes jump24{
+    50%{top: 580px;
+        left:700px;
+background-color: whitesmoke;
+border: 2px solid rgb(229, 229, 108);}
+    }
+
+    #twentyfive{
+animation: jump25 2s;
+}
+@keyframes jump25{
+    50%{top:0px;
+        left: 680px;
+background-color: whitesmoke;
+border: 2px solid rgb(0, 247, 255);}
+    }
+
+
+    </style>
+</head>
+<body>
+    <a href="9.html">
+    
+    <button class="pushable">
+        <span class="r">
+click
+</span></button>
+
+
+<div class="box" id="one"></div>
+<div class="box" id="two"></div>
+<div class="box" id="three"></div>
+<div class="box" id="four"></div>
+<div class="box" id="five"></div>
+<div class="box" id="six"></div>
+<div class="box" id="seven"></div>
+<div class="box" id="eight"></div>
+<div class="box" id="nine"></div>
+<div class="box" id="ten"></div>
+<div class="box" id="eleven"></div>
+<div class="box" id="tweleve"></div>
+<div class="box" id="thirteen"></div>
+<div class="box" id="fourteen"></div>
+<div class="box" id="fifteen"></div>
+<div class="box" id="sixteen"></div>
+<div class="box" id="seventeen"></div>
+<div class="box" id="eighteen"></div>
+<div class="box" id="nineteen"></div>
+<div class="box" id="twenty"></div>
+<div class="box" id="twentyone"></div>
+<div class="box" id="twentytwo"></div>
+<div class="box" id="twentythree"></div>
+<div class="box" id="twentyfour"></div>
+<div class="box" id="twentyfive"></div> 
+</a>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
